@@ -1,0 +1,1 @@
+"""ClaimCheck backend application package."""

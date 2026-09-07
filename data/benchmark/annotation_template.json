@@ -1,0 +1,22 @@
+{
+  "record_id": "REPLACE_WITH_UNIQUE_ID",
+  "product_image": "REPLACE_WITH_TRACEABLE_IMAGE_PATH_OR_URL",
+  "product_name": "REPLACE_WITH_MANUALLY_CHECKED_NAME",
+  "brand": "REPLACE_WITH_BRAND",
+  "category": "REPLACE_WITH_CATEGORY",
+  "raw_claim": "REPLACE_WITH_VERBATIM_CLAIM",
+  "claim_type": "HIGH_PROTEIN",
+  "nutrition": {
+    "basis": "per_100g",
+    "protein": {"value": null, "unit": "g", "source": "REPLACE_WITH_SOURCE"},
+    "fat": {"value": null, "unit": "g", "source": "REPLACE_WITH_SOURCE"},
+    "sodium": {"value": null, "unit": "mg", "source": "REPLACE_WITH_SOURCE"}
+  },
+  "rule_id": "REPLACE_WITH_VERIFIED_RULE_ID",
+  "comparator": null,
+  "expected_verdict": "INSUFFICIENT_EVIDENCE",
+  "evidence_notes": "REPLACE_WITH_MANUAL_EVIDENCE_NOTES",
+  "annotation_notes": "REPLACE_WITH_REVIEW_NOTES",
+  "split_group": "REPLACE_WITH_BRAND_OR_PRODUCT_FAMILY",
+  "split": "train"
+}

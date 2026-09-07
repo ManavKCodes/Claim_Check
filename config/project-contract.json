@@ -1,0 +1,52 @@
+{
+  "project_name": "ClaimCheck",
+  "scope": "Packaged food sold in India",
+  "verdicts": [
+    "SUPPORTED",
+    "CONTRADICTED",
+    "INSUFFICIENT_EVIDENCE"
+  ],
+  "claim_types": [
+    "HIGH_PROTEIN",
+    "LOW_FAT",
+    "NO_ADDED_SUGAR",
+    "COMPARATIVE_PROTEIN",
+    "REDUCED_SODIUM"
+  ],
+  "data_sources": {
+    "product": "Open Food Facts",
+    "regulatory": "FSSAI"
+  },
+  "planned_stack": {
+    "backend": "Python 3.12, FastAPI, SQLAlchemy, Pydantic",
+    "frontend": "React, TypeScript, Vite",
+    "database": "PostgreSQL with SQLite local profile",
+    "testing": "pytest, httpx, Playwright",
+    "deployment": "Containerized backend and static frontend hosting"
+  },
+  "planned_api": [
+    "POST /api/product/lookup",
+    "POST /api/product/analyze",
+    "POST /api/claim/extract",
+    "POST /api/claim/classify",
+    "POST /api/comparator/resolve",
+    "POST /api/verify",
+    "GET /api/verification/{id}",
+    "GET /api/evidence/{id}",
+    "GET /api/rules",
+    "POST /api/evaluation/run"
+  ],
+  "database_entities": [
+    "Product",
+    "ProductImage",
+    "NutritionData",
+    "Ingredient",
+    "Claim",
+    "Rule",
+    "Comparator",
+    "Evidence",
+    "Verification",
+    "BenchmarkRecord",
+    "EvaluationResult"
+  ]
+}

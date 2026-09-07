@@ -1,0 +1,49 @@
+:root { font-family: "Trebuchet MS", "Segoe UI", sans-serif; color: #173f5f; background: #e9edf0; font-synthesis: none; text-rendering: optimizeLegibility; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+.app-shell { min-height: 100vh; background: linear-gradient(135deg, #f4f0e6 0%, #e9edf0 58%, #d8e6e8 100%); }
+.topbar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; max-width: 1180px; margin: 0 auto; padding: 2rem 1.5rem 1rem; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 0; font-family: Georgia, serif; font-size: clamp(2.5rem, 6vw, 5rem); line-height: .86; }
+h2 { margin-bottom: .35rem; font-family: Georgia, serif; font-size: clamp(1.35rem, 3vw, 2rem); }
+.eyebrow, .label, .step, .phase-pill { font: 700 .72rem/1.2 "Trebuchet MS", sans-serif; letter-spacing: .08em; text-transform: uppercase; }
+.eyebrow { margin-bottom: .6rem; color: #ed553b; }
+.phase-pill { padding: .65rem .8rem; border: 1px solid #173f5f; border-radius: 999px; }
+.workspace { display: grid; gap: 1rem; max-width: 1180px; margin: 0 auto; padding: 1rem 1.5rem 3rem; }
+.panel, .result-panel { border: 1px solid rgba(23, 63, 95, .18); background: rgba(255, 252, 244, .8); box-shadow: 0 10px 30px rgba(23, 63, 95, .08); }
+.panel { padding: clamp(1rem, 3vw, 1.75rem); }
+.section-heading { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
+.step { flex: 0 0 auto; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%; color: #fff; background: #173f5f; }
+.section-heading p { margin-bottom: 0; color: #486477; font-size: .92rem; }
+label { display: grid; gap: .4rem; margin-bottom: 1rem; color: #486477; font-size: .78rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+input, select { width: 100%; border: 1px solid #aebdc3; border-radius: 4px; padding: .8rem .85rem; color: #173f5f; background: #fffdf8; outline: none; text-transform: none; letter-spacing: 0; }
+input:focus, select:focus { border-color: #ed553b; box-shadow: 0 0 0 3px rgba(237, 85, 59, .16); }
+.lookup, .claim-row { display: grid; grid-template-columns: 1fr auto; gap: 1rem; align-items: end; }
+.button { border: 0; border-radius: 4px; padding: .82rem 1.05rem; font-weight: 700; transition: transform .15s ease, background .15s ease; }
+.button:hover:not(:disabled) { transform: translateY(-2px); }
+.button:disabled { cursor: wait; opacity: .6; }
+.button.secondary { color: #173f5f; background: #f7c873; }
+.button.primary { color: #fff; background: #ed553b; }
+.button.compact { margin-bottom: 1rem; white-space: nowrap; }
+.classification { display: flex; justify-content: space-between; gap: 1rem; padding: 1rem; border-left: 4px solid #f7c873; background: #fff8e8; }
+.classification .label { color: #486477; }
+.field-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.action-bar { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 0; }
+.action-bar p { margin: 0; color: #486477; font-size: .9rem; }
+.result-panel { padding: clamp(1rem, 3vw, 1.75rem); border-top: 6px solid #ed553b; }
+.verdict-supported { border-top-color: #2a9d8f; }
+.verdict-contradicted { border-top-color: #ed553b; }
+.verdict-insufficient_evidence { border-top-color: #f7c873; }
+.result-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.result-head h2 { margin-bottom: 1.5rem; font-size: clamp(2rem, 5vw, 3.5rem); text-transform: uppercase; }
+.score { display: grid; gap: .2rem; text-align: right; }
+.score strong { font: 700 2rem Georgia, serif; }
+.score span { color: #486477; font-size: .75rem; }
+.result-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; padding: 1rem 0; border-top: 1px solid #cbd5d8; }
+.result-grid div { display: grid; gap: .4rem; min-width: 0; }
+.result-grid strong { overflow-wrap: anywhere; font-size: .95rem; }
+.result-grid small { color: #486477; }
+.legal { margin: 1rem 0 0; padding-top: 1rem; border-top: 1px solid #cbd5d8; color: #486477; font-size: .8rem; }
+@media (max-width: 700px) { .topbar { align-items: flex-start; } .phase-pill { font-size: .62rem; } .lookup, .claim-row, .field-grid, .result-grid { grid-template-columns: 1fr; } .button.compact { margin-bottom: 0; } .action-bar, .result-head { align-items: stretch; flex-direction: column; } .score { text-align: left; } }

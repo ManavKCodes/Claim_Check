@@ -1,0 +1,8 @@
+{
+  "benchmark_version": "0.1.0-empty",
+  "split_strategy": "brand_or_product_family",
+  "status": "NOT_YET_POPULATED",
+  "train_groups": [],
+  "test_groups": [],
+  "leakage_review": "PENDING_MANUAL_REVIEW"
+}

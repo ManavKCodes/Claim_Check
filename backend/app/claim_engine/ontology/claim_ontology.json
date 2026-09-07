@@ -1,0 +1,47 @@
+[
+  {
+    "claim_type": "HIGH_PROTEIN",
+    "display_name": "High Protein",
+    "category": "absolute",
+    "nutrient": "protein",
+    "requires_comparator": false,
+    "required_evidence": ["claim", "subject_protein", "applicable_rule"],
+    "aliases": ["high protein", "high in protein", "rich in protein"]
+  },
+  {
+    "claim_type": "LOW_FAT",
+    "display_name": "Low Fat",
+    "category": "absolute",
+    "nutrient": "fat",
+    "requires_comparator": false,
+    "required_evidence": ["claim", "subject_fat", "applicable_rule"],
+    "aliases": ["low fat", "low in fat"]
+  },
+  {
+    "claim_type": "NO_ADDED_SUGAR",
+    "display_name": "No Added Sugar",
+    "category": "ingredient-condition",
+    "nutrient": "sugar",
+    "requires_comparator": false,
+    "required_evidence": ["claim", "ingredient_list", "applicable_rule"],
+    "aliases": ["no added sugar", "no sugar added", "without added sugar"]
+  },
+  {
+    "claim_type": "COMPARATIVE_PROTEIN",
+    "display_name": "30% More Protein",
+    "category": "comparative",
+    "nutrient": "protein",
+    "requires_comparator": true,
+    "required_evidence": ["claim", "subject_protein", "reference_product", "reference_protein", "comparable_basis", "applicable_rule"],
+    "aliases": ["30% more protein", "30 percent more protein", "30% extra protein"]
+  },
+  {
+    "claim_type": "REDUCED_SODIUM",
+    "display_name": "Reduced Sodium",
+    "category": "comparative",
+    "nutrient": "sodium",
+    "requires_comparator": true,
+    "required_evidence": ["claim", "subject_sodium", "reference_product", "reference_sodium", "comparable_basis", "applicable_rule"],
+    "aliases": ["reduced sodium", "less sodium", "lower sodium"]
+  }
+]

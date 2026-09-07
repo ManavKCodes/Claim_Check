@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "required": ["record_id", "product_image", "product_name", "brand", "category", "raw_claim", "claim_type", "nutrition", "rule_id", "expected_verdict", "evidence_notes", "annotation_notes", "split_group", "split"],
+  "properties": {
+    "record_id": {"type": "string", "minLength": 1},
+    "product_image": {"type": "string", "minLength": 1},
+    "product_name": {"type": "string", "minLength": 1},
+    "brand": {"type": "string", "minLength": 1},
+    "category": {"type": "string", "minLength": 1},
+    "raw_claim": {"type": "string", "minLength": 1},
+    "claim_type": {"enum": ["HIGH_PROTEIN", "LOW_FAT", "NO_ADDED_SUGAR", "COMPARATIVE_PROTEIN", "REDUCED_SODIUM"]},
+    "nutrition": {"type": "object"},
+    "rule_id": {"type": "string", "minLength": 1},
+    "comparator": {"type": ["object", "null"]},
+    "expected_verdict": {"enum": ["SUPPORTED", "CONTRADICTED", "INSUFFICIENT_EVIDENCE"]},
+    "evidence_notes": {"type": "string", "minLength": 1},
+    "annotation_notes": {"type": "string", "minLength": 1},
+    "split_group": {"type": "string", "minLength": 1},
+    "split": {"enum": ["train", "test"]}
+  },
+  "additionalProperties": false
+}

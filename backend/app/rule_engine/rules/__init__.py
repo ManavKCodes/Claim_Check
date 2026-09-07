@@ -1,0 +1,1 @@
+"""Versioned regulatory rule catalog."""
